@@ -24,6 +24,12 @@ body {
   padding: 2rem;
 }
 
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  color: var(--black);
+}
+
 .perfume-preview {
   background-color: var(--white);
   width: 90vw;
@@ -53,4 +59,60 @@ body {
   flex-direction: column;
   /* align-items: flex-start; */
   gap: 1.5rem;
+}
+
+.perfume-label,
+.perfume-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: var(--grey);
+}
+
+.perfume-label {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+.perfume-desc {
+  line-height: 1.6;
+}
+
+.price-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.price-info .discounted-price {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  color: var(--green-700);
+  font-weight: 700;
+}
+
+.price-info .original-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  line-height: 1.2;
+  text-decoration: line-through;
+  align-self: center;
+  color: var(--grey);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--green-500);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  border: none;
+  gap: 0.5rem;
+}
+
+button .cart-btn-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
